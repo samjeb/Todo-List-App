@@ -1,0 +1,95 @@
+/* Reset + base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #dc143c, #ff6f61);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App container */
+.app {
+  background: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+.app h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input + button */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #dc143c;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #dc143c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #b01032;
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+li button {
+  background: transparent;
+  color: #dc143c;
+  font-weight: bold;
+  padding: 0 0.4rem;
+}
+
+li button:hover {
+  color: #a50d28;
+}
